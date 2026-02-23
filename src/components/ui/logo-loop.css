@@ -1,0 +1,52 @@
+.logo-loop {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.logo-loop-track {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  width: max-content;
+  animation: logoLoopScroll linear infinite;
+}
+
+.logo-loop-item {
+  min-width: 180px;
+  padding: 1.1rem 1.4rem;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(30, 41, 59, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #e2e8f0;
+}
+
+.logo-loop-item i {
+  font-size: 1.4rem;
+  color: #38bdf8;
+}
+
+.logo-loop-item span {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@keyframes logoLoopScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-loop-track {
+    animation: none;
+  }
+}

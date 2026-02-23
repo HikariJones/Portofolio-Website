@@ -9,6 +9,42 @@
 
 body { background-color: var(--bg-color); color: var(--text-color); overflow-x: hidden; }
 
+.app-root {
+    position: relative;
+    z-index: 1;
+}
+
+.grainient-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.grainient-filter-def {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.grainient-layer {
+    position: absolute;
+    inset: -12%;
+}
+
+.grainient-overlay-one,
+.grainient-overlay-two,
+.grainient-noise {
+    mix-blend-mode: screen;
+}
+
+.grainient-noise {
+    background-image: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.08) 0%, transparent 42%),
+        radial-gradient(circle at 80% 90%, rgba(255, 255, 255, 0.06) 0%, transparent 45%);
+    opacity: 0.5;
+}
+
 /* Navbar */
 .navbar {
     display: flex; justify-content: space-between; align-items: center;

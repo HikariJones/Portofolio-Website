@@ -1,58 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive JS Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
-</head>
-<body>
-
-    <nav class="navbar">
-        <div class="logo">kai<span class="accent">verse.site</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content hidden">
-            <h1>Hi, I'm <span class="accent">Hikari</span></h1>
-            <h2>I am a <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Creator"]'></span></h2>
-            <p>Building interactive digital experiences with code.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View My Work</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="container">
-        <h2 class="section-title hidden">My <span class="accent">Skills</span></h2>
-        <div class="skills-grid hidden" id="skills-container"></div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2 class="section-title hidden">My <span class="accent">Projects</span></h2>
-        <div class="projects-grid" id="projects-container"></div>
-    </section>
-
-    <section id="certificates" class="container">
-        <h2 class="section-title hidden">My <span class="accent">Certifications</span></h2>
-        <div class="cert-grid" id="cert-container"></div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Hikari. Powered by JavaScript.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>kaiverse.site</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
