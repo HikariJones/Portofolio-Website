@@ -25,6 +25,11 @@ function Navbar({ menuOpen, onToggle, onNavigate }) {
             Certificates
           </a>
         </li>
+        <li>
+          <a href="#contact" onClick={onNavigate}>
+            Contact
+          </a>
+        </li>
       </ul>
       <div className="hamburger" onClick={onToggle}>
         <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`} />

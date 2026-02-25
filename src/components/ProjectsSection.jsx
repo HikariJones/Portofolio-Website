@@ -16,7 +16,7 @@ function ProjectsSection({ projects }) {
                 <div
                   className="card-image"
                   style={{
-                    backgroundImage: `url('${project.image}')`,
+                    backgroundImage: project.image ? `url('${project.image}')` : 'none',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                   }}

@@ -25,25 +25,25 @@ const projectsData = [
   {
     title: 'ZACU',
     desc: 'A safe space for businesses to validate payment as well as a dashboard to track and manage transactions.',
-    tags: ['React', 'Chart.js', 'Tailwind'],
+    tags: ['Dart', 'API', 'Firebase', 'Flutter'],
     links: { code: 'https://github.com/HikariJones/Inclusive-AI-UMKM' },
-    image: 'images/Project_Interface/ZACU.png',
+    image: '/images/Project_Interface/ZACU.png',
     status: 'In Progress'
   },
   {
     title: 'Todo-List Website',
     desc: 'A sleek todo-list application with drag-and-drop functionality and local storage persistence.',
-    tags: ['JavaScript', 'API', 'CSS'],
+    tags: ['JavaScript', 'HTML', 'CSS'],
     links: { code: 'https://github.com/HikariJones/RevoUmini-project' },
-    image: 'images/Project_Interface/TodoList.png',
+    image: '/images/Project_Interface/TodoList.png',
     status: 'Done'
   },
   {
     title: 'COACHMIND - AI Football Player Detector',
     desc: 'An AI-powered football player detection system that identifies and tracks players on the field in real-time.',
-    tags: ['Vue.js', 'Firebase'],
-    links: { code: '#', live: '#' },
-    image: 'images/Project_Interface/',
+    tags: ['Python', 'html', 'CSS', 'PyTorch', 'OpenCV', 'Yolov5', 'Bytetrack', 'supervision', 'Scikit-learn', 'Yolov8-POSE'],
+    links: { code: 'https://github.com/HikariJones/AI-Football_Detection_Player-Hikari-' },
+    image: '/images/Project_Interface/Coachmind.png',
     status: 'Done'
   }
 ];
@@ -53,11 +53,11 @@ const certsData = [
     year: '2025',
     title: 'Google Cybersecurity Professional',
     issuer: 'Google',
-    image: 'images/Certs/Coursera_Cyber_Certificate.jpg'
+    image: '/images/Certs/Coursera_Cyber_Certificate.jpg'
   }
 ];
 
-const words = ['Developer', 'Designer', 'Creator'];
+const words = ['Developer', 'Designer', 'Student'];
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -180,6 +180,46 @@ function App() {
         <ProjectsSection projects={projectsData} />
 
         <CertificatesSection certificates={certsData} />
+
+        <section id="contact" className="container contact-section">
+          <h2 className="section-title hidden">
+            Get in <span className="accent">Touch</span>
+          </h2>
+
+          <div className="contact-grid hidden">
+            <a className="contact-item" href="mailto:hikarijones15@gmail.com">
+              <i className="fas fa-envelope" />
+              <div>
+                <h3>Email</h3>
+                <p>hikarijones15@gmail.com</p>
+              </div>
+            </a>
+
+            <a className="contact-item" href="tel:+6282191115503">
+              <i className="fas fa-phone" />
+              <div>
+                <h3>Phone</h3>
+                <p>+62-821-9111-5503</p>
+              </div>
+            </a>
+
+            <a className="contact-item" href="https://github.com/HikariJones" target="_blank" rel="noreferrer">
+              <i className="fab fa-github" />
+              <div>
+                <h3>GitHub</h3>
+                <p>github.com/HikariJones</p>
+              </div>
+            </a>
+
+            <a className="contact-item" href="https://www.linkedin.com/in/hikari-jones-47b05a288/" target="_blank" rel="noreferrer">
+              <i className="fab fa-linkedin" />
+              <div>
+                <h3>LinkedIn</h3>
+                <p>LinkedIn/Hikari Jones</p>
+              </div>
+            </a>
+          </div>
+        </section>
 
         <footer>
           <p>&copy; 2026 Hikari. Powered by React.</p>
